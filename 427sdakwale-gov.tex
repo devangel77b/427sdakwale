@@ -1,0 +1,65 @@
+\documentclass[10pt]{letter}
+
+
+% to sign: gpg --local-user 0x14D5ED104DB3F0CC --clearsign --output==427isharma-senate-signed.pdf --not-dash-escaped 427isharma-senate.pdf
+% to verify: gpg --verify 427isharma-signed.pdf
+
+\usepackage{mnhsletter}
+%\usepackage{siunitx}
+
+\newcommand\firstname{Saanvi}
+\newcommand\lastname{Dakwale}
+\newcommand\subject{she}
+\newcommand\object{her}
+\newcommand\possessive{her}
+\newcommand\reflexive{herself}
+\newcommand\adjective{happy}
+
+\title{Recommendation for \firstname\ \lastname}
+\author{Dennis Evangelista}
+% For letters of recommendation, MBS asks that you do not date your letter
+\date{} 
+%\date{\today}
+%\usepackage[american,inputamerican]{isodate}
+%\date{\printdate{6/17/2021}}
+
+% This also sets the PDF metadata so it is searchable in like Spotlight etc. 
+\hypersetup{
+pdfauthor={Dennis Evangelista},
+pdftitle={Recommendation for \firstname\ \lastname},
+pdfkeywords={\firstname\ \lastname, Manalapan High School, MNHS, Science and Engineering, S\&E, recommendation, NJ Governor's STEM Scholars Program}}
+
+% for letter closing use this if you wish to sign hardcopy
+\usepackage{designature}
+\digitalsignature{\includesignature}
+\name{Dennis J.~Evangelista, Ph.D.}
+
+\begin{document}
+
+\begin{letter}{% recipient address here (optional, for future envelope use)
+%Research Science Institute\\
+%Center for Excellence in Education\\
+%7918 Jones Branch Drive, Suite 700\\
+%McLean, VA 22102
+}
+
+% opening here
+\opening{Recommendation for {\scshape\firstname\ \lastname}:}
+%\raggedright % if you like this sort of thing
+%\setlength{\parindent}{15pt} % if you like this sort of thing
+
+I am \adjective\ to recommend \firstname\ \lastname\ for the New Jersey Governor's STEM Scholars Program.  I am \firstname's teacher for AP Physics in the Science \& Engineering program at Manalapan High School. 
+
+Our program is a highly rigorous STEM program. In my class, \firstname\ has published two peer-reviewed scientific journal articles.  \firstname\ is an engaged student who is deserving of further STEM opportunities; \subject\ will take the lead and be a worthy advocate and ambassador for STEM engagement. 
+
+
+% closing here
+\closing{Very respectfully,}
+%\noclosing
+
+%\ps{post script here}
+%\encl{enclosure here}
+\end{letter}
+
+\end{document}
+
